@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracy Bryan's Gentlemen Salon | Premium Men's Grooming in Westwood, Los Angeles</title>
+  <meta name="description" content="Tracy Bryan's Gentlemen Salon — Westwood's premier destination for men's haircuts, shaves, facials, hair systems, and nail care. Book your appointment in Los Angeles today.">
+  <meta name="keywords" content="men's salon Westwood, men's haircut Los Angeles, barbershop Westwood Village, men's grooming LA, hair system Westwood, men's facial Los Angeles, Tracy Bryan salon, premium barber Westwood, men's manicure LA">
+  <meta property="og:title" content="Tracy Bryan's Gentlemen Salon | Westwood, Los Angeles">
+  <meta property="og:description" content="Premium grooming services for the modern gentleman. Haircuts, shaves, facials, hair systems &amp; more — in the heart of Westwood, LA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.tracybryansgentlemenssalon.com">
+  <meta property="og:image" content="https://www.tracybryansgentlemenssalon.com/photos/storefront.jpg">
+  <link rel="canonical" href="https://www.tracybryansgentlemenssalon.com">
+  <meta name="robots" content="index, follow">
+
+  <!-- Schema.org Local Business Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Tracy Bryan's Gentlemen Salon",
+    "image": "https://www.tracybryansgentlemenssalon.com/photos/storefront.jpg",
+    "url": "https://www.tracybryansgentlemenssalon.com",
+    "telephone": "+14242529971",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1459 Westwood Blvd",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90024",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0577,
+      "longitude": -118.4395
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "10:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/tracybryansgs",
+      "https://maps.app.goo.gl/8JdKEudKe8yKbTHR8"
+    ],
+    "priceRange": "$$",
+    "description": "Tracy Bryan's Gentlemen Salon is Westwood's premier destination for men's grooming — haircuts, shaves, facials, hair systems, and nail care. Founded by master stylist Tracy Bryan in 2019."
+  }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── Variables ─────────────────────────────────────────── */
+    :root {
+      --color-cream:    #F5F2EC;
+      --color-ink:      #1A1A1A;
+      --color-gold:     #B8975A;
+      --color-charcoal: #3D3D3D;
+      --color-mist:     #E8E4DC;
+      --color-dark:     #2A2520;
+      --nav-height:     72px;
+      --transition:     0.3s ease;
+    }
+
+    /* ─── Reset & Base ──────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      color: var(--color-ink);
+      background-color: var(--color-cream);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ─── Typography ────────────────────────────────────────── */
+    .font-display { font-family: 'Cormorant Garamond', serif; }
+    .label {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+    }
+    .gold-rule {
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--color-gold);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ─── Scroll Animation ──────────────────────────────────── */
+    .animate {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .animate.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .animate-delay-1 { transition-delay: 0.1s; }
+    .animate-delay-2 { transition-delay: 0.2s; }
+    .animate-delay-3 { transition-delay: 0.3s; }
+    .animate-delay-4 { transition-delay: 0.4s; }
+
+    /* ─── Buttons ───────────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition), border-color var(--transition);
+      white-space: nowrap;
+    }
+    .btn-gold {
+      background: var(--color-gold);
+      color: var(--color-cream);
+      border: 1px solid var(--color-gold);
+    }
+    .btn-gold:hover {
+      background: transparent;
+      color: var(--color-gold);
+    }
+    .btn-outline-gold {
+      background: transparent;
+      color: var(--color-gold);
+      border: 1px solid var(--color-gold);
+    }
+    .btn-outline-gold:hover {
+      background: var(--color-gold);
+      color: var(--color-cream);
+    }
+    .btn-outline-cream {
+      background: transparent;
+      color: var(--color-cream);
+      border: 1px solid rgba(245,242,236,0.6);
+    }
+    .btn-outline-cream:hover {
+      background: rgba(245,242,236,0.15);
+      border-color: var(--color-cream);
+    }
+
+    /* ─── Navigation ────────────────────────────────────────── */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: var(--nav-height);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2.5rem;
+      transition: background var(--transition), box-shadow var(--transition);
+    }
+    #navbar.scrolled {
+      background: rgba(245,242,236,0.97);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      box-shadow: 0 1px 0 rgba(26,26,26,0.08);
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .nav-logo-primary {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--color-cream);
+      letter-spacing: 0.05em;
+      transition: color var(--transition);
+    }
+    .nav-logo-secondary {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.7);
+      transition: color var(--transition);
+    }
+    #navbar.scrolled .nav-logo-primary { color: var(--color-ink); }
+    #navbar.scrolled .nav-logo-secondary { color: var(--color-charcoal); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .nav-links a {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.9);
+      position: relative;
+      transition: color var(--transition);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -3px; left: 0;
+      width: 0; height: 1px;
+      background: var(--color-gold);
+      transition: width var(--transition);
+    }
+    .nav-links a:hover { color: var(--color-gold); }
+    .nav-links a:hover::after { width: 100%; }
+    #navbar.scrolled .nav-links a { color: var(--color-charcoal); }
+    #navbar.scrolled .nav-links a:hover { color: var(--color-gold); }
+
+    .nav-cta {
+      font-size: 0.68rem;
+      padding: 0.6rem 1.4rem;
+    }
+    /* Override nav-cta color in hero state */
+    #navbar:not(.scrolled) .btn-outline-gold {
+      color: var(--color-cream);
+      border-color: rgba(245,242,236,0.5);
+    }
+    #navbar:not(.scrolled) .btn-outline-gold:hover {
+      background: rgba(245,242,236,0.15);
+      border-color: var(--color-cream);
+      color: var(--color-cream);
+    }
+    #navbar.scrolled .btn-outline-gold {
+      color: var(--color-gold);
+      border-color: var(--color-gold);
+    }
+    #navbar.scrolled .btn-outline-gold:hover {
+      background: var(--color-gold);
+      color: var(--color-cream);
+    }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 1.5px;
+      background: var(--color-cream);
+      transition: transform var(--transition), opacity var(--transition);
+    }
+    #navbar.scrolled .hamburger span { background: var(--color-ink); }
+    .hamburger.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    /* Mobile menu overlay */
+    #mobile-menu {
+      position: fixed;
+      inset: 0;
+      background: var(--color-cream);
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      transform: translateX(100%);
+      transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    #mobile-menu.open { transform: translateX(0); }
+    #mobile-menu a {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      color: var(--color-ink);
+      letter-spacing: 0.05em;
+      transition: color var(--transition);
+    }
+    #mobile-menu a:hover { color: var(--color-gold); }
+    #mobile-menu .mobile-cta { margin-top: 1rem; }
+
+    /* ─── Hero ──────────────────────────────────────────────── */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      background-image: url('photos/front-splash.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-color: var(--color-dark); /* fallback if photo missing */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    /* iOS Safari doesn't support background-attachment: fixed — fall back to scroll */
+    @supports (-webkit-touch-callout: none) {
+      #hero { background-attachment: scroll; }
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(26,21,17,0.68) 0%, rgba(26,21,17,0.58) 100%);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 680px;
+      padding: 0 2rem;
+    }
+    .hero-location {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 1.5rem;
+    }
+    .hero-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      font-weight: 400;
+      line-height: 1.05;
+      color: var(--color-cream);
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.01em;
+    }
+    .hero-sub {
+      font-family: 'Jost', sans-serif;
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(245,242,236,0.75);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ─── About ─────────────────────────────────────────────── */
+    #about {
+      padding: 7rem 2.5rem;
+      background: var(--color-cream);
+    }
+    .about-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 5rem;
+      align-items: center;
+    }
+    .about-text .label { margin-bottom: 1.5rem; }
+    .about-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: var(--color-ink);
+      margin-bottom: 1.75rem;
+      line-height: 1.2;
+    }
+    .about-body {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.85;
+    }
+    .about-tagline {
+      display: block;
+      margin-top: 1.75rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-ink);
+    }
+    .about-image-wrap {
+      position: relative;
+      height: 500px;
+    }
+    .about-image-wrap .photo-slot { height: 100%; border-radius: 2px; }
+
+    /* ─── Services ──────────────────────────────────────────── */
+    #services {
+      padding: 7rem 2.5rem;
+      background: var(--color-mist);
+    }
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 4rem;
+    }
+    .section-label { margin-bottom: 1rem; }
+    .section-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 400;
+      color: var(--color-ink);
+      line-height: 1.2;
+    }
+    .services-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+    }
+    .service-card {
+      background: var(--color-cream);
+      padding: 2.25rem 2rem;
+      transition: transform var(--transition), box-shadow var(--transition);
+      cursor: default;
+    }
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(26,26,26,0.08);
+      z-index: 1;
+      position: relative;
+    }
+    .service-icon {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 1.25rem;
+      color: var(--color-gold);
+    }
+    .service-category {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 0.6rem;
+    }
+    .service-name {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-ink);
+      margin-bottom: 0.75rem;
+    }
+    .service-desc {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.75;
+    }
+    .services-cta {
+      background: var(--color-cream);
+      padding: 4rem 2rem;
+      text-align: center;
+      margin-top: 4rem;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .services-cta-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: var(--color-ink);
+      margin-bottom: 1.75rem;
+      line-height: 1.3;
+    }
+
+    /* ─── Photo Gallery ─────────────────────────────────────── */
+    #the-space {
+      padding: 7rem 2.5rem;
+      background: var(--color-cream);
+    }
+    .gallery-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+      gap: 6px;
+    }
+    .gallery-slot-large {
+      grid-row: span 2;
+      height: 560px;
+    }
+    .gallery-slot-small {
+      height: 277px;
+    }
+    .gallery-row-2 {
+      margin-top: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px;
+      max-width: 1100px;
+      margin: 6px auto 0;
+    }
+    .gallery-row-2 .photo-slot { height: 280px; }
+
+    /* Photo slot base styles */
+    .photo-slot {
+      position: relative;
+      background: var(--color-dark);
+      overflow: hidden;
+    }
+    .photo-slot img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+      transition: transform 0.6s ease;
+    }
+    .photo-slot:hover img { transform: scale(1.03); }
+
+    /* Transparent button overlay — sits above the img, always hittable */
+    .lightbox-trigger {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      cursor: zoom-in;
+      z-index: 10;
+      padding: 0;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    .photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(245,242,236,0.18);
+      font-family: 'Jost', sans-serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      z-index: 0;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* ─── Team ──────────────────────────────────────────────── */
+    #the-team {
+      padding: 7rem 2.5rem;
+      background: var(--color-mist);
+    }
+    .team-grid {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+    .team-card {
+      background: var(--color-cream);
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .team-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(26,26,26,0.09);
+    }
+    .team-photo {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .team-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background: var(--color-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(245,242,236,0.15);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    .team-info {
+      padding: 1.75rem 2rem 2rem;
+    }
+    .team-rule {
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--color-gold);
+      margin-bottom: 1rem;
+    }
+    .team-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: var(--color-ink);
+      margin-bottom: 0.25rem;
+      line-height: 1.1;
+    }
+    .team-role {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 1rem;
+    }
+    .team-bio {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.8;
+    }
+    @media (max-width: 640px) {
+      .team-grid { grid-template-columns: 1fr; max-width: 420px; }
+    }
+
+    /* ─── Testimonials ──────────────────────────────────────── */
+    #reviews {
+      padding: 7rem 2.5rem;
+      background: var(--color-mist);
+    }
+    .reviews-scroll {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      gap: 1.5rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      scroll-snap-type: x mandatory;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .reviews-scroll::-webkit-scrollbar { display: none; }
+    .review-card {
+      flex: 0 0 340px;
+      background: var(--color-cream);
+      border-left: 3px solid var(--color-gold);
+      padding: 2.25rem 2rem 2rem;
+      scroll-snap-align: start;
+      position: relative;
+    }
+    .review-quote-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 5rem;
+      line-height: 0.6;
+      color: var(--color-gold);
+      opacity: 0.4;
+      display: block;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    .review-author {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-ink);
+      margin-bottom: 0.5rem;
+    }
+    .review-stars {
+      color: var(--color-gold);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+    }
+    .reviews-more {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    .reviews-more a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition);
+      padding-bottom: 2px;
+    }
+    .reviews-more a:hover { border-color: var(--color-gold); }
+
+    /* ─── Contact ───────────────────────────────────────────── */
+    #contact {
+      padding: 7rem 2.5rem;
+      background: var(--color-cream);
+    }
+    .contact-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+    .contact-block { margin-bottom: 2.25rem; }
+    .contact-block-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-bottom: 0.75rem;
+    }
+    .contact-address {
+      font-size: 1rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+      line-height: 1.7;
+    }
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-gold);
+      margin-top: 0.75rem;
+      border-bottom: 1px solid transparent;
+      transition: border-color var(--transition);
+      padding-bottom: 1px;
+    }
+    .contact-link:hover { border-color: var(--color-gold); }
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .hours-table tr { border-bottom: 1px solid var(--color-mist); }
+    .hours-table tr:last-child { border-bottom: none; }
+    .hours-table td {
+      padding: 0.55rem 0;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+    }
+    .hours-table td:first-child {
+      font-weight: 400;
+      color: var(--color-ink);
+      width: 45%;
+    }
+    .hours-closed {
+      color: rgba(61,61,61,0.45) !important;
+      font-style: italic;
+    }
+    .contact-phone {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: var(--color-charcoal);
+    }
+    .contact-phone a { color: inherit; }
+    .contact-phone a:hover { color: var(--color-gold); }
+    .contact-instagram a {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--color-charcoal);
+      transition: color var(--transition);
+    }
+    .contact-instagram a:hover { color: var(--color-gold); }
+    .map-wrap {
+      position: relative;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .map-wrap iframe {
+      display: block;
+      border: 0;
+      border-radius: 3px;
+    }
+
+    /* ─── Footer ────────────────────────────────────────────── */
+    footer {
+      background: var(--color-ink);
+      color: var(--color-cream);
+      padding: 4rem 2.5rem 0;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .footer-logo-primary {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: var(--color-cream);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .footer-logo-secondary {
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.5);
+      display: block;
+    }
+    .footer-tagline {
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: rgba(245,242,236,0.55);
+      line-height: 1.7;
+    }
+    .footer-divider {
+      border: none;
+      border-top: 1px solid rgba(245,242,236,0.1);
+      margin: 2.5rem 0;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2rem;
+      margin-bottom: 2rem;
+    }
+    .footer-links a {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(245,242,236,0.6);
+      transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--color-gold); }
+    .footer-booking {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 3rem;
+    }
+    .footer-booking a {
+      font-size: 0.82rem;
+      font-weight: 300;
+      color: var(--color-gold);
+      transition: opacity var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .footer-booking a:hover { opacity: 0.75; }
+    .footer-bottom {
+      border-top: 1px solid rgba(245,242,236,0.08);
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .footer-copy {
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: rgba(245,242,236,0.35);
+    }
+    .footer-women-owned {
+      font-size: 0.65rem;
+      font-weight: 300;
+      color: rgba(245,242,236,0.25);
+      letter-spacing: 0.05em;
+    }
+
+    /* ─── Responsive ────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-image-wrap { height: 320px; }
+      .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+    }
+
+    @media (max-width: 768px) {
+      #navbar { padding: 0 1.5rem; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      #navbar.scrolled .hamburger span { background: var(--color-ink); }
+
+      .hero-h1 { font-size: clamp(2.75rem, 10vw, 4rem); }
+      .hero-sub { font-size: 0.9rem; }
+
+      #about, #services, #the-space, #reviews, #contact { padding: 4.5rem 1.5rem; }
+
+      .services-grid { grid-template-columns: 1fr; gap: 2px; }
+
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-slot-large { height: 280px; grid-row: span 1; }
+      .gallery-slot-small { height: 200px; }
+      .gallery-row-2 { grid-template-columns: 1fr 1fr; }
+      .gallery-row-2 .photo-slot { height: 200px; }
+
+      .review-card { flex: 0 0 85vw; }
+
+      footer { padding: 3rem 1.5rem 0; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-ctas { flex-direction: column; align-items: center; }
+      .gallery-row-2 { grid-template-columns: 1fr; }
+      .gallery-row-2 .photo-slot { height: 220px; }
+    }
+
+    /* ─── Lightbox (native dialog) ──────────────────────────── */
+    #lightbox {
+      border: none;
+      background: transparent;
+      padding: 0;
+      max-width: 100vw;
+      max-height: 100dvh;
+      width: 100vw;
+      height: 100dvh;
+      overflow: hidden;
+    }
+    #lightbox:not([open]) { display: none; }
+    #lightbox[open] {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: lb-in 0.35s ease forwards;
+    }
+    #lightbox::backdrop {
+      background: rgba(20,16,12,0.93);
+      animation: lb-backdrop-in 0.35s ease forwards;
+    }
+    #lightbox.closing::backdrop {
+      animation: lb-backdrop-out 0.3s ease forwards;
+    }
+    #lightbox.closing {
+      animation: lb-out 0.3s ease forwards;
+    }
+    @keyframes lb-in {
+      from { opacity: 0; transform: scale(0.96); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    @keyframes lb-out {
+      from { opacity: 1; transform: scale(1); }
+      to   { opacity: 0; transform: scale(0.96); }
+    }
+    @keyframes lb-backdrop-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes lb-backdrop-out {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+    #lightbox-img {
+      max-width: min(90vw, 1300px);
+      max-height: 88vh;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      border-radius: 2px;
+      box-shadow: 0 32px 80px rgba(0,0,0,0.7);
+    }
+    #lightbox-close {
+      position: fixed;
+      top: 1.25rem;
+      right: 1.75rem;
+      background: none;
+      border: none;
+      color: rgba(245,242,236,0.55);
+      font-family: 'Jost', sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1;
+      cursor: pointer;
+      transition: color 0.2s ease;
+      padding: 0.5rem;
+      z-index: 1;
+    }
+    #lightbox-close:hover { color: var(--color-gold); }
+  </style>
+</head>
+<body>
+
+  <!-- ─── Navigation ─────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Tracy Bryan's Gentlemen Salon — Home">
+      <span class="nav-logo-primary">Tracy Bryan's</span>
+      <span class="nav-logo-secondary">Gentlemen Salon</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#the-space">The Space</a></li>
+      <li><a href="#the-team">The Team</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/services"
+       class="btn btn-outline-gold nav-cta"
+       target="_blank" rel="noopener noreferrer">Book Now</a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── Mobile Menu ────────────────────────────────────── -->
+  <div id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="#services" class="mobile-nav-link">Services</a>
+    <a href="#the-space" class="mobile-nav-link">The Space</a>
+    <a href="#the-team" class="mobile-nav-link">The Team</a>
+    <a href="#reviews" class="mobile-nav-link">Reviews</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/services"
+       class="btn btn-gold mobile-cta"
+       target="_blank" rel="noopener noreferrer">Book an Appointment →</a>
+  </div>
+
+  <!-- ─── Hero ──────────────────────────────────────────── -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content animate">
+      <p class="hero-location">Westwood · Los Angeles</p>
+      <h1 class="hero-h1">A Salon<br>for Gentlemen.</h1>
+      <p class="hero-sub">
+        Premium grooming services for the modern man.<br>
+        Haircuts, shaves, facials, and more — in the heart of Westwood.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/services"
+           class="btn btn-gold"
+           target="_blank" rel="noopener noreferrer">Book an Appointment →</a>
+        <a href="#services" class="btn btn-outline-cream">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── About ─────────────────────────────────────────── -->
+  <section id="about" aria-label="About the salon">
+    <div class="about-inner">
+      <div class="about-text animate">
+        <span class="gold-rule" aria-hidden="true"></span>
+        <p class="label">The Salon</p>
+        <p class="about-body">
+          Since 2019, Tracy Bryan's Gentlemen Salon has been Westwood's destination
+          for men who take their appearance seriously. Founded by Tracy Bryan —
+          a seasoned hairstylist with an eye for detail and a gift for listening —
+          the salon combines the precision of a master stylist with the comfort
+          of a private club.
+          <br><br>
+          Private treatment rooms. Complimentary beverages. No rush, no noise.
+          <em class="about-tagline">Just exceptional grooming.</em>
+        </p>
+      </div>
+      <div class="about-image-wrap animate animate-delay-2">
+        <div class="photo-slot" style="height: 100%; border-radius: 2px;">
+          <div class="photo-placeholder">The Salon</div>
+          <img src="photos/tb-glass.jpg"
+               alt="Tracy Bryan's Gentlemen Salon — Westwood, Los Angeles"
+               loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Services ──────────────────────────────────────── -->
+  <section id="services" aria-label="Services">
+    <div class="section-header animate">
+      <p class="label section-label">Our Services</p>
+      <h2 class="section-heading font-display">Everything a gentleman needs,<br>under one roof.</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- HAIRCUTS -->
+      <article class="service-card animate animate-delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+          <line x1="7.5" y1="10.5" x2="16" y2="4"/>
+        </svg>
+        <p class="service-category">Haircuts</p>
+        <h3 class="service-name">Men's Haircut</h3>
+        <p class="service-desc">Classic scissor or clipper cut tailored to your style. Every cut includes a consultation, shampoo, and finish.</p>
+      </article>
+
+      <article class="service-card animate animate-delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+          <line x1="7.5" y1="10.5" x2="16" y2="4"/>
+        </svg>
+        <p class="service-category">Haircuts</p>
+        <h3 class="service-name">Men's Haircut + Beard Trim</h3>
+        <p class="service-desc">The complete look — precision cut paired with expert beard sculpting and lineup.</p>
+      </article>
+
+      <article class="service-card animate animate-delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/>
+          <line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/>
+          <line x1="7.5" y1="10.5" x2="16" y2="4"/>
+        </svg>
+        <p class="service-category">Haircuts</p>
+        <h3 class="service-name">Children's Haircut</h3>
+        <p class="service-desc">Expert cuts for boys of all ages, in a calm and welcoming environment.</p>
+      </article>
+
+      <!-- SHAVING -->
+      <article class="service-card animate animate-delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 6h18v12H3z"/><line x1="12" y1="6" x2="12" y2="18"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+        </svg>
+        <p class="service-category">Shaving &amp; Grooming</p>
+        <h3 class="service-name">Classic Hot Towel Shave</h3>
+        <p class="service-desc">A traditional straight-razor shave with hot towels, pre-shave oil, and a soothing aftershave treatment.</p>
+      </article>
+
+      <article class="service-card animate animate-delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 6h18v12H3z"/><line x1="12" y1="6" x2="12" y2="18"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+        </svg>
+        <p class="service-category">Shaving &amp; Grooming</p>
+        <h3 class="service-name">Beard Trim &amp; Shape</h3>
+        <p class="service-desc">Precise beard sculpting and detailing. Defined lines, natural shape.</p>
+      </article>
+
+      <!-- HAIR TREATMENTS -->
+      <article class="service-card animate animate-delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2C6.5 2 3 6 3 10c0 5 4 9 9 9s9-4 9-9c0-4-3.5-8-9-8z"/>
+          <path d="M8 11c.5-2 2-3.5 4-3.5s3.5 1.5 4 3.5"/>
+        </svg>
+        <p class="service-category">Hair Treatments</p>
+        <h3 class="service-name">Keratin Treatment</h3>
+        <p class="service-desc">Frizz-free smoothing treatment for lasting manageability and shine.</p>
+      </article>
+
+      <article class="service-card animate animate-delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2C6.5 2 3 6 3 10c0 5 4 9 9 9s9-4 9-9c0-4-3.5-8-9-8z"/>
+          <path d="M8 11c.5-2 2-3.5 4-3.5s3.5 1.5 4 3.5"/>
+        </svg>
+        <p class="service-category">Hair Treatments</p>
+        <h3 class="service-name">Hair Color / Balayage</h3>
+        <p class="service-desc">Natural-looking color enhancement and balayage, tailored to skin tone and style.</p>
+      </article>
+
+      <!-- HAIR SYSTEMS -->
+      <article class="service-card animate animate-delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="8" r="5"/>
+          <path d="M3 21v-1a9 9 0 0 1 9-9 9 9 0 0 1 9 9v1"/>
+          <path d="M7 8.5c0-2.5 2.5-4 5-4" stroke-dasharray="2 1.5"/>
+        </svg>
+        <p class="service-category">Hair Systems</p>
+        <h3 class="service-name">Hair System Consultation &amp; Application</h3>
+        <p class="service-desc">Discreet, natural-looking non-surgical hair replacement systems. Private room available. Consultation required.</p>
+      </article>
+
+      <article class="service-card animate animate-delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="8" r="5"/>
+          <path d="M3 21v-1a9 9 0 0 1 9-9 9 9 0 0 1 9 9v1"/>
+          <path d="M7 8.5c0-2.5 2.5-4 5-4" stroke-dasharray="2 1.5"/>
+        </svg>
+        <p class="service-category">Hair Systems</p>
+        <h3 class="service-name">Hair System Maintenance</h3>
+        <p class="service-desc">Ongoing care and styling for existing hair systems. Taping, cleaning, and reattachment.</p>
+      </article>
+
+      <!-- SKINCARE -->
+      <article class="service-card animate animate-delay-1">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <circle cx="9" cy="10" r="1" fill="currentColor" stroke="none"/>
+          <circle cx="15" cy="10" r="1" fill="currentColor" stroke="none"/>
+          <path d="M9 15.5q3 2 6 0"/>
+        </svg>
+        <p class="service-category">Skincare</p>
+        <h3 class="service-name">Men's Facial</h3>
+        <p class="service-desc">A results-driven facial designed for men's skin: deep cleansing, exfoliation, and hydration. Conducted in a private treatment room.</p>
+      </article>
+
+      <!-- NAIL CARE -->
+      <article class="service-card animate animate-delay-2">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/>
+          <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8H10a8 8 0 0 1-8-8v-5a2 2 0 1 1 4 0"/>
+        </svg>
+        <p class="service-category">Nail Care</p>
+        <h3 class="service-name">Men's Manicure</h3>
+        <p class="service-desc">Clean, shaped, and buffed nails for the gentleman who attends to every detail.</p>
+      </article>
+
+      <article class="service-card animate animate-delay-3">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 11V6a2 2 0 0 0-4 0v5M14 10V4a2 2 0 0 0-4 0v6M10 10.5V6a2 2 0 0 0-4 0v8"/>
+          <path d="M18 11a2 2 0 1 1 4 0v3a8 8 0 0 1-8 8H10a8 8 0 0 1-8-8v-5a2 2 0 1 1 4 0"/>
+        </svg>
+        <p class="service-category">Nail Care</p>
+        <h3 class="service-name">Pedicure</h3>
+        <p class="service-desc">Relaxing foot care treatment — soak, exfoliate, trim, and hydrate.</p>
+      </article>
+
+    </div><!-- /.services-grid -->
+
+    <div class="services-cta animate">
+      <p class="services-cta-text font-display">Ready to look your best?</p>
+      <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/services"
+         class="btn btn-gold"
+         target="_blank" rel="noopener noreferrer">Book Your Appointment →</a>
+    </div>
+  </section>
+
+  <!-- ─── The Space ──────────────────────────────────────── -->
+  <section id="the-space" aria-label="The Space">
+    <div class="section-header animate">
+      <p class="label section-label">The Space</p>
+      <h2 class="section-heading font-display">Designed for the discerning gentleman.</h2>
+    </div>
+
+    <div class="gallery-grid animate animate-delay-1">
+      <!-- Large left -->
+      <div class="photo-slot gallery-slot-large">
+        <div class="photo-placeholder">Storefront</div>
+        <img src="photos/storefront-thumb.jpg"
+             data-full="photos/storefront.jpg"
+             alt="Tracy Bryan's Gentlemen Salon storefront on Westwood Blvd, Los Angeles"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <!-- Two stacked right -->
+      <div class="photo-slot gallery-slot-small">
+        <div class="photo-placeholder">Interior</div>
+        <img src="photos/interior-full-thumb.jpg"
+             data-full="photos/interior-full.jpg"
+             alt="Full salon interior — premium men's grooming salon in Westwood"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-slot gallery-slot-small">
+        <div class="photo-placeholder">Waiting Area</div>
+        <img src="photos/waiting-area-thumb.jpg"
+             data-full="photos/waiting-area.jpg"
+             alt="Comfortable waiting area at Tracy Bryan's Gentlemen Salon"
+             loading="lazy" onerror="this.remove()">
+      </div>
+    </div>
+
+    <div class="gallery-row-2 animate animate-delay-2">
+      <div class="photo-slot">
+        <div class="photo-placeholder">Reception Desk</div>
+        <img src="photos/reception-desk-thumb.jpg"
+             data-full="photos/reception-desk.jpg"
+             alt="Reception desk at Tracy Bryan's Gentlemen Salon, Westwood"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-slot">
+        <div class="photo-placeholder">Barber Chair</div>
+        <img src="photos/barber-chair-thumb.jpg"
+             data-full="photos/barber-chair.jpg"
+             alt="Barber chair — precision grooming at Tracy Bryan's Gentlemen Salon"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-slot">
+        <div class="photo-placeholder">Manicure Station</div>
+        <img src="photos/manicure-chair-thumb.jpg"
+             data-full="photos/manicure-chair.jpg"
+             alt="Manicure station — men's nail care at Tracy Bryan's Gentlemen Salon"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-slot">
+        <div class="photo-placeholder">Facial Room</div>
+        <img src="photos/facial-room-thumb.jpg"
+             data-full="photos/facial-room.jpg"
+             alt="Private facial treatment room at Tracy Bryan's Gentlemen Salon"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-slot">
+        <div class="photo-placeholder">Hair Washing</div>
+        <img src="photos/hair-washing-thumb.jpg"
+             data-full="photos/hair-washing.jpg"
+             alt="Hair washing at Tracy Bryan's Gentlemen Salon, Westwood"
+             loading="lazy" onerror="this.remove()">
+      </div>
+      <div class="photo-slot">
+        <div class="photo-placeholder">Hair Systems Room</div>
+        <img src="photos/hair-systems-room-thumb.jpg"
+             data-full="photos/hair-systems-room.jpg"
+             alt="Discreet hair systems consultation room — Tracy Bryan's Gentlemen Salon"
+             loading="lazy" onerror="this.remove()">
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── The Team ─────────────────────────────────────────── -->
+  <section id="the-team" aria-label="The Team">
+    <div class="section-header animate">
+      <p class="label section-label">The Team</p>
+      <h2 class="section-heading font-display">The people behind the work.</h2>
+    </div>
+
+    <div class="team-grid">
+
+      <article class="team-card animate animate-delay-1">
+        <img class="team-photo"
+             src="https://www.tracybryansgentlemenssalon.com/uploads/b/11a91cdbf12ba9c40f4d65b8725565a21038f1792272dead5c62fd4904503778/2024-04-25_10-41-53_1714066920-modified%20copy%202_1717187380.png"
+             alt="Tracy Bryan — Founder &amp; Lead Stylist at Tracy Bryan's Gentlemen Salon"
+             loading="lazy"
+             onerror="this.outerHTML='<div class=&quot;team-photo-placeholder&quot;>Tracy</div>'">
+        <div class="team-info">
+          <span class="team-rule" aria-hidden="true"></span>
+          <h3 class="team-name">Tracy Bryan</h3>
+          <p class="team-role">Founder &amp; Lead Stylist</p>
+          <p class="team-bio">Tracy founded the salon in 2019 on a simple belief: every man deserves exceptional grooming in a space that respects his time. With over a decade of experience and a gift for listening, she has built one of Westwood's most trusted names in men's hair — one client at a time.</p>
+        </div>
+      </article>
+
+      <article class="team-card animate animate-delay-2">
+        <img class="team-photo"
+             src="https://www.tracybryansgentlemenssalon.com/uploads/b/11a91cdbf12ba9c40f4d65b8725565a21038f1792272dead5c62fd4904503778/Screenshot%202024-05-31%20at%2012.48.43%20PM-modified_1717187148.png"
+             alt="Ciera — Stylist at Tracy Bryan's Gentlemen Salon"
+             loading="lazy"
+             onerror="this.outerHTML='<div class=&quot;team-photo-placeholder&quot;>Ciera</div>'">
+        <div class="team-info">
+          <span class="team-rule" aria-hidden="true"></span>
+          <h3 class="team-name">Ciera</h3>
+          <p class="team-role">Stylist</p>
+          <p class="team-bio">Ciera brings a precise eye for shape and line to every cut. Known for her warmth and attentiveness, she creates a comfortable experience from start to finish — making sure every client leaves looking and feeling their best.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ─── Testimonials ──────────────────────────────────── -->
+  <section id="reviews" aria-label="Client testimonials">
+    <div class="section-header animate">
+      <p class="label section-label">What Our Clients Say</p>
+      <h2 class="section-heading font-display">Trusted by gentlemen across Los Angeles.</h2>
+    </div>
+
+    <div class="reviews-scroll animate animate-delay-1" role="list">
+
+      <article class="review-card" role="listitem">
+        <span class="review-quote-mark" aria-hidden="true">"</span>
+        <p class="review-text">Tracy was fabulous. She listened carefully, took her time, and gave him the perfect haircut. He left the salon with a smile.</p>
+        <p class="review-author">Jennifer M.</p>
+        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+      </article>
+
+      <article class="review-card" role="listitem">
+        <span class="review-quote-mark" aria-hidden="true">"</span>
+        <p class="review-text">If any barber or hairstylist has done you dirty in the past, Tracy will cure that haircut anxiety. It's great to have a professional that actually listens to what you want!</p>
+        <p class="review-author">Marcus T.</p>
+        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+      </article>
+
+      <article class="review-card" role="listitem">
+        <span class="review-quote-mark" aria-hidden="true">"</span>
+        <p class="review-text">On the west side, she's the best there is for a solid men's haircut at an affordable price. Great friendly staff, complimentary beverages, and a vibe you can't find anywhere else.</p>
+        <p class="review-author">David R.</p>
+        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+      </article>
+
+      <article class="review-card" role="listitem">
+        <span class="review-quote-mark" aria-hidden="true">"</span>
+        <p class="review-text">Tracy has created a clean, welcoming space for salon services. It seems like a great place for men who want better — and more — service than a typical barbershop.</p>
+        <p class="review-author">Sarah K.</p>
+        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+      </article>
+
+      <article class="review-card" role="listitem">
+        <span class="review-quote-mark" aria-hidden="true">"</span>
+        <p class="review-text">Really nice place to get my hair done! It just happened to be the best place I've visited in LA so far. The staff are really nice and friendly.</p>
+        <p class="review-author">Alex L.</p>
+        <p class="review-stars" aria-label="5 out of 5 stars">★★★★★</p>
+      </article>
+
+    </div>
+
+    <div class="reviews-more animate">
+      <a href="https://maps.app.goo.gl/8JdKEudKe8yKbTHR8"
+         target="_blank" rel="noopener noreferrer">
+        Read more reviews on Google Maps →
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── Contact ────────────────────────────────────────── -->
+  <section id="contact" aria-label="Contact and location">
+    <div class="section-header animate">
+      <p class="label section-label">Find Us</p>
+      <h2 class="section-heading font-display">Visit the salon.</h2>
+    </div>
+
+    <div class="contact-inner">
+      <div class="contact-left animate animate-delay-1">
+
+        <div class="contact-block">
+          <p class="contact-block-label">Visit Us</p>
+          <address class="contact-address" style="font-style: normal;">
+            1459 Westwood Blvd<br>
+            Los Angeles, CA 90024
+          </address>
+          <a href="https://maps.app.goo.gl/8JdKEudKe8yKbTHR8"
+             class="contact-link"
+             target="_blank" rel="noopener noreferrer">
+            Get Directions →
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <p class="contact-block-label">Hours</p>
+          <table class="hours-table" aria-label="Salon hours">
+            <tbody>
+              <tr><td>Tuesday</td><td>9:00 AM – 7:00 PM</td></tr>
+              <tr><td>Wednesday</td><td>9:00 AM – 7:00 PM</td></tr>
+              <tr><td>Thursday</td><td>10:00 AM – 7:00 PM</td></tr>
+              <tr><td>Friday</td><td>9:00 AM – 7:00 PM</td></tr>
+              <tr><td>Saturday</td><td>10:00 AM – 5:00 PM</td></tr>
+              <tr><td>Sunday &amp; Monday</td><td class="hours-closed">Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="contact-block">
+          <p class="contact-block-label">Contact</p>
+          <p class="contact-phone">
+            <a href="tel:+14242529971">(424) 252-9971</a>
+          </p>
+        </div>
+
+        <div class="contact-block contact-instagram">
+          <p class="contact-block-label">Follow</p>
+          <a href="https://www.instagram.com/tracybryansgs"
+             target="_blank" rel="noopener noreferrer">
+            @tracybryansgs on Instagram →
+          </a>
+        </div>
+
+      </div><!-- /.contact-left -->
+
+      <div class="map-wrap animate animate-delay-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.757!2d-118.44159!3d34.05713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb95c1196875%3A0x6b165e7de5e77ce7!2s1459%20Westwood%20Blvd%2C%20Los%20Angeles%2C%20CA%2090024!5e0!3m2!1sen!2sus!4v1709654400000!5m2!1sen!2sus"
+          width="100%"
+          height="460"
+          style="border:0; border-radius: 3px; display: block;"
+          allowfullscreen
+          loading="lazy"
+          title="Tracy Bryan's Gentlemen Salon location map — 1459 Westwood Blvd, Los Angeles">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────────────────────── -->
+  <footer aria-label="Site footer">
+    <div class="footer-inner">
+      <a href="#hero" aria-label="Tracy Bryan's Gentlemen Salon — scroll to top">
+        <span class="footer-logo-primary">Tracy Bryan's Gentlemen Salon</span>
+        <span class="footer-logo-secondary">Westwood · Los Angeles</span>
+      </a>
+      <p class="footer-tagline">Premium grooming for the modern gentleman.</p>
+
+      <hr class="footer-divider" aria-hidden="true">
+
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links" role="list">
+          <li><a href="#services">Services</a></li>
+          <li>
+            <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/services"
+               target="_blank" rel="noopener noreferrer">Book Appointment</a>
+          </li>
+          <li>
+            <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/bookings"
+               target="_blank" rel="noopener noreferrer">My Bookings</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/tracybryansgs"
+               target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/8JdKEudKe8yKbTHR8"
+               target="_blank" rel="noopener noreferrer">Google Maps</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer-booking">
+        <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/services"
+           target="_blank" rel="noopener noreferrer">Book New Appointment →</a>
+        <a href="https://book.squareup.com/appointments/mvah5rz1ru5cmq/location/SP9AKEM3N8V0T/bookings"
+           target="_blank" rel="noopener noreferrer">Manage My Bookings →</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; 2025 Tracy Bryan's Gentlemen Salon &middot; 1459 Westwood Blvd, Los Angeles, CA 90024 &middot;
+          <a href="tel:+14242529971" style="color: inherit;">(424) 252-9971</a>
+        </p>
+        <p class="footer-women-owned">Women-Owned Business</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── Lightbox ─────────────────────────────────────────── -->
+  <dialog id="lightbox" aria-label="Full-size image viewer">
+    <button id="lightbox-close" aria-label="Close image viewer">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </dialog>
+
+  <script>
+    // ─── Navbar scroll behavior ──────────────────────────────
+    const navbar = document.getElementById('navbar');
+    function updateNavbar() {
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    }
+    window.addEventListener('scroll', updateNavbar, { passive: true });
+    updateNavbar();
+
+    // ─── Mobile menu ─────────────────────────────────────────
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu   = document.getElementById('mobile-menu');
+    const mobileLinks  = mobileMenu.querySelectorAll('.mobile-nav-link, .mobile-cta');
+
+    function closeMobileMenu() {
+      hamburgerBtn.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        hamburgerBtn.classList.add('active');
+        mobileMenu.classList.add('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    mobileLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+    // ─── Scroll animations (IntersectionObserver) ────────────
+    const animatedEls = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+    );
+    animatedEls.forEach(el => observer.observe(el));
+
+    // Hero content visible immediately (above the fold)
+    document.querySelector('#hero .animate').classList.add('is-visible');
+
+
+    // ─── Lightbox (native <dialog>) ──────────────────────────
+    const lightbox      = document.getElementById('lightbox');
+    const lightboxImg   = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt;
+      lightbox.classList.remove('closing');
+      lightbox.showModal();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('closing');
+      lightbox.addEventListener('animationend', () => {
+        lightbox.close();
+        lightbox.classList.remove('closing');
+        lightboxImg.src = '';
+      }, { once: true });
+    }
+
+    // Inject a transparent <button> on top of every gallery photo-slot.
+    // Buttons are native interactive elements — guaranteed to receive clicks
+    // regardless of z-index or stacking context.
+    document.querySelectorAll('#the-space .photo-slot').forEach(slot => {
+      const trigger = document.createElement('button');
+      trigger.type = 'button';
+      trigger.className = 'lightbox-trigger';
+      trigger.setAttribute('aria-label', 'View image full size');
+      slot.appendChild(trigger);
+
+      trigger.addEventListener('click', () => {
+        const img = slot.querySelector('img');
+        if (img) openLightbox(img.dataset.full || img.src, img.alt);
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    // Click on backdrop (the dialog itself, outside the img) closes it
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    // Escape key — prevent default close (no animation) and use ours instead
+    lightbox.addEventListener('cancel', e => { e.preventDefault(); closeLightbox(); });
+  </script>
+
+</body>
+</html>
