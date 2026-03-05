@@ -317,9 +317,21 @@
       text-align: center;
       overflow: hidden;
     }
-    /* iOS Safari doesn't support background-attachment: fixed — fall back to scroll */
-    @supports (-webkit-touch-callout: none) {
-      #hero { background-attachment: scroll; }
+    /* Touch devices: CSS background-attachment (fixed or scroll) is unreliable on
+       iOS due to rubber-band scrolling. Instead, disable the CSS background and
+       render it via ::before (position: absolute), which is truly anchored to the
+       hero box and cannot move. Also shifts image 20px left for better framing. */
+    @media (hover: none) and (pointer: coarse) {
+      #hero { background-image: none; }
+      #hero::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: url('photos/front-splash.jpg');
+        background-size: cover;
+        background-position: calc(50% - 20px) center;
+        z-index: 0;
+      }
     }
     .hero-overlay {
       position: absolute;
@@ -405,7 +417,8 @@
     }
     .about-image-wrap {
       position: relative;
-      height: 500px;
+      aspect-ratio: 1 / 1;
+      height: auto;
     }
     .about-image-wrap .photo-slot { height: 100%; border-radius: 2px; }
     .about-image-wrap .photo-slot::after {
@@ -659,6 +672,29 @@
     #reviews {
       padding: 7rem 2.5rem;
       background: var(--color-mist);
+      position: relative;
+      overflow: hidden;
+    }
+    #reviews::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url('photos/tb-glass.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      opacity: 0.25;
+      z-index: 0;
+      pointer-events: none;
+    }
+    @media (hover: none) and (pointer: coarse) {
+      #reviews::before {
+        background-attachment: scroll;
+      }
+    }
+    #reviews > * {
+      position: relative;
+      z-index: 1;
     }
     .reviews-scroll {
       max-width: 1100px;
@@ -674,7 +710,9 @@
     .reviews-scroll::-webkit-scrollbar { display: none; }
     .review-card {
       flex: 0 0 340px;
-      background: var(--color-cream);
+      background: rgba(245,242,236,0.75);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       border-left: 3px solid var(--color-gold);
       padding: 2.25rem 2rem 2rem;
       scroll-snap-align: start;
@@ -910,7 +948,6 @@
     @media (max-width: 1024px) {
       .services-grid { grid-template-columns: repeat(2, 1fr); }
       .about-inner { grid-template-columns: 1fr; gap: 3rem; }
-      .about-image-wrap { height: 320px; }
       .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
     }
 
@@ -930,10 +967,10 @@
       .gallery-grid {
         grid-template-columns: 1fr;
       }
-      .gallery-slot-large { height: 280px; grid-row: span 1; }
-      .gallery-slot-small { height: 200px; }
+      .gallery-slot-large { aspect-ratio: 1 / 1; height: auto; grid-row: span 1; }
+      .gallery-slot-small { aspect-ratio: 1 / 1; height: auto; }
       .gallery-row-2 { grid-template-columns: 1fr 1fr; }
-      .gallery-row-2 .photo-slot { height: 200px; }
+      .gallery-row-2 .photo-slot { aspect-ratio: 1 / 1; height: auto; }
 
       .review-card { flex: 0 0 85vw; }
 
@@ -944,7 +981,7 @@
     @media (max-width: 480px) {
       .hero-ctas { flex-direction: column; align-items: center; }
       .gallery-row-2 { grid-template-columns: 1fr; }
-      .gallery-row-2 .photo-slot { height: 220px; }
+      .gallery-row-2 .photo-slot { aspect-ratio: 1 / 1; height: auto; }
     }
 
     /* ─── Lightbox (native dialog) ──────────────────────────── */
@@ -1045,6 +1082,7 @@
 
   <!-- ─── Mobile Menu ────────────────────────────────────── -->
   <div id="mobile-menu" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+    <a href="#hero" class="mobile-nav-link">Home</a>
     <a href="#services" class="mobile-nav-link">Services</a>
     <a href="#the-space" class="mobile-nav-link">The Space</a>
     <a href="#the-team" class="mobile-nav-link">The Team</a>
@@ -1094,9 +1132,9 @@
       <div class="about-image-wrap animate animate-delay-2">
         <div class="photo-slot" style="height: 100%; border-radius: 2px;">
           <div class="photo-placeholder">The Salon</div>
-          <img src="photos/tb-glass.jpg"
+          <img src="photos/salon-chair.jpg"
                alt="Tracy Bryan's Gentlemen Salon — Westwood, Los Angeles"
-               loading="lazy">
+               loading="lazy" style="object-position: bottom right;">
         </div>
       </div>
     </div>
