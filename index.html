@@ -408,6 +408,15 @@
       height: 500px;
     }
     .about-image-wrap .photo-slot { height: 100%; border-radius: 2px; }
+    .about-image-wrap .photo-slot::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(26,21,17,0.1);
+      z-index: 2;
+      border-radius: 2px;
+      pointer-events: none;
+    }
 
     /* ─── Services ──────────────────────────────────────────── */
     #services {
@@ -1335,7 +1344,7 @@
 
       <article class="team-card animate animate-delay-1">
         <img class="team-photo"
-             src="https://www.tracybryansgentlemenssalon.com/uploads/b/11a91cdbf12ba9c40f4d65b8725565a21038f1792272dead5c62fd4904503778/2024-04-25_10-41-53_1714066920-modified%20copy%202_1717187380.png"
+             src="photos/team-tracy.jpg"
              alt="Tracy Bryan — Founder &amp; Lead Stylist at Tracy Bryan's Gentlemen Salon"
              loading="lazy"
              onerror="this.outerHTML='<div class=&quot;team-photo-placeholder&quot;>Tracy</div>'">
@@ -1349,7 +1358,7 @@
 
       <article class="team-card animate animate-delay-2">
         <img class="team-photo"
-             src="https://www.tracybryansgentlemenssalon.com/uploads/b/11a91cdbf12ba9c40f4d65b8725565a21038f1792272dead5c62fd4904503778/Screenshot%202024-05-31%20at%2012.48.43%20PM-modified_1717187148.png"
+             src="photos/team-ciera.jpg"
              alt="Ciera — Stylist at Tracy Bryan's Gentlemen Salon"
              loading="lazy"
              onerror="this.outerHTML='<div class=&quot;team-photo-placeholder&quot;>Ciera</div>'">
